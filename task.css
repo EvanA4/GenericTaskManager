@@ -1,0 +1,107 @@
+body, h2 {
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: lightslategray;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#heading {
+    background-color: black;
+    text-align: center;
+    padding: 15px 0;
+    color: white;
+    box-shadow: 0 0 10px black;
+}
+
+#taskCreator {
+    margin: 100px 0;
+    justify-content: center;
+    display: flex;
+}
+
+#submit, input {
+    border-style: none;
+    height: 30px;
+    box-shadow: 0 0 5px 0 black;
+}
+
+#submit, #edit, #del, #complete {
+    background-color: black;
+    color: white;
+    
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input {
+    color: rgb(170, 170, 170);
+    border-style: none;
+    padding: 0 0 0 10px;
+}
+
+#userIn2 {
+    float: left;
+}
+
+input:focus {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    width: 800px;
+    margin: 0 auto;
+
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    height: 30px;
+    background-color: rgb(109, 125, 141);
+    padding: 5px;
+    margin: 0 0 20px 0;
+}
+
+label {
+    margin: 4.75px 10px;
+    width: fit-content;
+    float: left;
+
+    font-size: large;
+    color: black;
+}
+
+#edit, #del, #complete {
+    float: right;
+    height: 30px;
+}
+
+#del {
+    background-color: rgb(218, 100, 100);
+    border-style: none;
+}
+
+#complete {
+    background-color: rgb(103, 170, 103);
+    border-style: none;
+}
+
+button {
+    transition: 0.3s;
+}
+
+#submit:hover, #edit:hover {
+    color: rgb(124, 124, 124);
+}
+
+#complete:hover, #del:hover {
+    color: black;
+}
